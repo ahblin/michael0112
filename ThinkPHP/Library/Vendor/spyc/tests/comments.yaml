@@ -1,0 +1,3 @@
+foo: 'bar' #Common
+arr: ['x', 'y', 'z'] # Common here
+bar: kittens
