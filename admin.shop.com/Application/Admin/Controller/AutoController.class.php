@@ -54,8 +54,6 @@ class AutoController extends Controller
                 }
             }
             unset($field);
-            /*dump($fields);
-            exit;*/
             ob_start();
             require  APP_PATH.'Admin/Common/model.tpl';
             $model_model = "<?php\r\n".ob_get_clean();
@@ -70,8 +68,6 @@ class AutoController extends Controller
             require  APP_PATH.'Admin/Common/edit.tpl';
             $edit_model = ob_get_clean();
             $edit_path = APP_PATH.'Admin/View/'.$controller_name;
-            /*dump($edit_model);
-            exit;*/
             if(!is_dir($edit_path)){
                 mkdir($edit_path,0777,true);
             }
@@ -88,12 +84,9 @@ class AutoController extends Controller
             //用生成edit的$edit_path文件夹
             $index_path = $edit_path.'/index.html';
             file_put_contents($index_path,$index_model);
-
             //所有代码执行完毕,跳转
             $this->success('添加成功!',U('index'));
-
         } else {
-
             $this->assign('meta_title','自动生成控制器和模型');
             $this->display('edit');
         }

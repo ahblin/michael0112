@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="http://admin.shop.com/Public/css/general.css" rel="stylesheet" type="text/css"/>
     <link href="http://admin.shop.com/Public/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="http://admin.shop.com/Public/css/common.css" rel="stylesheet" type="text/css"/>
     <link href="http://admin.shop.com/Public/css/page.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="http://admin.shop.com/Public/js/jquery1-11.3.js"></script>
     <script type="text/javascript" src="http://admin.shop.com/Public/layer/layer.js"></script>

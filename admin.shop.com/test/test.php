@@ -7,3 +7,5 @@ $patten = '/(.*)@([a-z]*)\|?(.*)/';
 preg_match($patten,$str,$result);
 echo '<pre>';
 var_dump($result);
+?>
+<input type="text" value="11111" readonly>

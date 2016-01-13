@@ -7,6 +7,7 @@ return array(
         '__IMG__'=> WEB_PATH.'/Public/images',
         '__JS__'=> WEB_PATH.'/Public/js',
         '__LAYER__'=> WEB_PATH.'/Public/layer/layer.js',
+        '__UPLOADIFY__'=> WEB_PATH.'/Public/uploadify',
     ),
 
 );
