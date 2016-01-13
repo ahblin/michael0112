@@ -38,10 +38,11 @@
             <tr>
                 <td class="label">品牌LOGO</td>
                 <td>
-                    <input type='file' class="uploadify-button" name='logo' id="file_upload_1" maxlength='60'/>
+                    <input type='file' class="uploadify-button" id="file_upload_1" maxlength='60'/>
+                    <input type='hidden' class="logo" name="logo" value=""/>
 
                     <div class="upload-img-box" style="display: none">
-                        <div class="upload-pre-item">
+                        <div class="upload-pre-item" >
                             <img src="">
                         </div>
                     </div>
@@ -98,6 +99,7 @@
                 'onUploadSuccess' : function(file, data, response) {
                     $('.upload-img-box').show();
                     $('.upload-pre-item img').attr('src','http://admin.shop.com/Uploads/'+data);
+                    $('.logo').val(data);
                 },
                 'onUploadError' : function(file, errorCode, errorMsg, errorString) {
                     alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
