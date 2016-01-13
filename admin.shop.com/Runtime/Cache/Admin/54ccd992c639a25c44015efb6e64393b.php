@@ -94,11 +94,11 @@
                 width         : 120,
                 buttonText    : '上传图片',
                 'fileSizeLimit' : '1MB',
-                'formData'      : {'dir' : 'xxxxx'},
+                'formData'      : {'dir' : 'php1009-0114'},
                 'fileTypeExts' : '*.gif; *.jpg; *.png',
                 'onUploadSuccess' : function(file, data, response) {
                     $('.upload-img-box').show();
-                    $('.upload-pre-item img').attr('src','http://admin.shop.com/Uploads/'+data);
+                    $('.upload-pre-item img').attr('src','http://php1009-0114.b0.upaiyun.com/'+data);
                     $('.logo').val(data);
                 },
                 'onUploadError' : function(file, errorCode, errorMsg, errorString) {

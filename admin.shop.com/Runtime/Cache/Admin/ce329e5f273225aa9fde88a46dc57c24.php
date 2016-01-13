@@ -53,7 +53,7 @@
                         </td>
                         <td class='first-cell' align='center'><?php echo ($row["name"]); ?></td>
                         <td align='center'><?php echo ($row["url"]); ?></td>
-                        <td align='center'><img src="http://admin.shop.com/Uploads/<?php echo ($row["logo"]); ?>" width="30"></td>
+                        <td align='center'><img src="http://php1009-0114.b0.upaiyun.com/<?php echo ($row["logo"]); ?>-mini" width="30"></td>
                         <td align='center'><?php echo ($row["sort"]); ?></td>
                         <td align='center'><?php echo ($row["intro"]); ?></td>
                         <td align="center"><a class="ajax-get"

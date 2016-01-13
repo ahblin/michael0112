@@ -15,11 +15,20 @@ use Think\Upload;
 class UploadController extends Controller
 {
     public function upload(){
+        $dir = I('post.dir');
         $config = array(
-            'autoSub'      => true, //自动子目录保存文件
-            'subName'      => array('date', 'Y-m-d'), //子目录创建方式，[0]-函数名，[1]-参数，多个参数使用数组
-            'rootPath'     => './Uploads/', //保存根路径
-            'saveName'     => array('uniqid', ''), //上传文件命名规则，[0]-函数名，[1]-参数，多个参数使用数组
+            //'autoSub'      => true, //自动子目录保存文件
+            //'subName'      => array('date', 'Y-m-d'), //子目录创建方式，[0]-函数名，[1]-参数，多个参数使用数组
+            'rootPath'     => './', //保存根路径
+            //'saveName'     => array('uniqid', ''), //上传文件命名规则，[0]-函数名，[1]-参数，多个参数使用数组
+            'driver'       => 'Upyun', // 文件上传驱动
+            'driverConfig'     => array(
+                'host'     => 'v0.api.upyun.com', //又拍云服务器
+                'username' => 'brazor', //又拍云用户
+                'password' => 'brazorbrazor', //又拍云密码
+                'bucket'   => $dir, //空间名称
+                'timeout'  => 90, //超时时间
+            ),
         );
         $upload = new Upload($config);
         $result = $upload->uploadOne($_FILES['Filedata']);
