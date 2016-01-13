@@ -10,9 +10,7 @@
     <script type="text/javascript" src="http://admin.shop.com/Public/js/jquery1-11.3.js"></script>
     <script type="text/javascript" src="http://admin.shop.com/Public/layer/layer.js"></script>
     <script type="text/javascript" src="http://admin.shop.com/Public/js/common.js" ></script>
-    
-    <link href="http://admin.shop.com/Public/uploadify/uploadify.css" rel="stylesheet" type="text/css" />
-
+    <!--预留css的位置-->
 </head>
 <body>
 <h1>
@@ -40,11 +38,11 @@
             <tr>
                 <td class="label">品牌LOGO</td>
                 <td>
-                    <input type='file' class="uploadify" name='logo' id="file_upload_1" maxlength='60'/>
+                    <input type='file' class="uploadify-button" name='logo' id="file_upload_1" maxlength='60'/>
 
-                    <div class="upload-img-box">
+                    <div class="upload-img-box" style="display: none">
                         <div class="upload-pre-item">
-                            <img src="/Uploads/Picture/2016-01-13/5695d6be0b8c2.png">
+                            <img src="">
                         </div>
                     </div>
                 </td>
@@ -91,10 +89,19 @@
             $("#file_upload_1").uploadify({
                 height        : 30,
                 swf           : 'http://admin.shop.com/Public/uploadify/uploadify.swf',
-                uploader      : 'http://admin.shop.com/Public/uploadify/uploadify.php',
+                uploader      : "<?php echo U('Upload/upload');?>",
                 width         : 120,
                 buttonText    : '上传图片',
                 'fileSizeLimit' : '1MB',
+                'formData'      : {'dir' : 'xxxxx'},
+                'fileTypeExts' : '*.gif; *.jpg; *.png',
+                'onUploadSuccess' : function(file, data, response) {
+                    $('.upload-img-box').show();
+                    $('.upload-pre-item img').attr('src','http://admin.shop.com/Uploads/'+data);
+                },
+                'onUploadError' : function(file, errorCode, errorMsg, errorString) {
+                    alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
+                }
             });
         });
     </script>

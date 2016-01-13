@@ -8,6 +8,7 @@ return array(
         '__JS__'=> WEB_PATH.'/Public/js',
         '__LAYER__'=> WEB_PATH.'/Public/layer/layer.js',
         '__UPLOADIFY__'=> WEB_PATH.'/Public/uploadify',
+        '__UPLOAD__'=> WEB_PATH.'/Uploads/',
     ),
 
 );
