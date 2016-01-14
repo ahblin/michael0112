@@ -40,4 +40,18 @@ class GoodsCategoryModel extends BaseModel
         //添加的节点信息放到哪个父节点下. 并且返回该节点对应的id
         return $result->insert($this->data['parent_id'],$this->data,'bottom');
     }
+
+    public function save(){
+        //>>1.创建能够执行sql的对象
+        $dbMysql = new DbMysqlInterfaceImplModel();
+
+        //>>2.计算边界
+        $nestedSetsService = new NestedSetsService($dbMysql,'goods_category','lft','rgt','parent_id','id','level');
+
+        //>>3.将指定的节点移动一个父分类下面
+        $nestedSetsService->moveUnder($this->data['id'],$this->data['parent_id']);
+
+        //>>4.需要将请求中的其他数据修改到数据库中
+        return parent::save();
+    }
 }

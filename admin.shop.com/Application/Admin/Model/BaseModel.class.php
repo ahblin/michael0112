@@ -61,10 +61,13 @@ class BaseModel extends Model
      */
     public function changeStatus($id, $status = -1)
     {
-        //根据自己的id,找到子孙id,如果没有子孙,返回的是自己的id
-        $sql = "select child.id from  goods_category as child,goods_category as parent where  parent.id = {$id}  and child.lft>=parent.lft  and child.rgt<=parent.rgt";
-        $rows = $this->query($sql);
-        $id  = array_column($rows,'id');
+        //如果id是数组(多选框),则不需要查找
+        if(!is_array($id)){
+            //根据自己的id,找到子孙id,如果没有子孙,返回的是自己的id
+            $sql = "select child.id from  goods_category as child,goods_category as parent where  parent.id = {$id}  and child.lft>=parent.lft  and child.rgt<=parent.rgt";
+            $rows = $this->query($sql);
+            $id  = array_column($rows,'id');
+        }
         $data = array('status' => $status, 'id' => array('in', $id));
         if ($status == -1) {
             $data['name'] = array('exp', "CONCAT(name,'_del')");

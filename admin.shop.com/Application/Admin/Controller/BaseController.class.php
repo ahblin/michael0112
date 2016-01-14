@@ -50,6 +50,12 @@ class BaseController extends Controller
         $this->display('index');
     }
 
+
+    /**
+     * 钩子方法,在每个页面展示之前,用于各个控制器操作或获得其他信息
+     */
+    protected function _beforDisplay(){}
+
     /**
      * 增删改查的改
      * @param $id
@@ -71,6 +77,7 @@ class BaseController extends Controller
             $row = $this->model->find($id);
             //将数据分配到页面
             $this->assign($row);
+            $this->_beforDisplay();
             $this->assign('meta_title', '编辑' . $this->meta_title);
             //选择显示页面
             $this->display('edit');
@@ -94,6 +101,7 @@ class BaseController extends Controller
             };
             $this->error('操作失败' . model_error($this->model));
         } else {
+            $this->_beforDisplay();
             $this->assign('meta_title', '添加' . $this->meta_title);
             $this->display('edit');
         }

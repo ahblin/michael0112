@@ -16,12 +16,12 @@
                     <tr class="treegrid-{$row.id} <neq name='row.parent_id' value='0'>treegrid-parent-{$row.parent_id}</neq>">
                         <td class='first-cell' align='left'>{$row.name}</td>
                         <td align='center'>{$row.intro}</td>
-                        <td align="center"><a
+                        <td align="center"><a class="ajax-get"
                                               href="{:U('changeStatus',array('id'=>$row['id'],'status'=>(1-$row['status'])))}"><img
                                 src="__IMG__/{$row.status}.gif"/></a></td>
                         <td align="center">
-                            <a  href="{:U('edit',array('id'=>$row['id']))}" title="编辑">编辑</a> |
-                            <a  href="{:U('changeStatus',array('id'=>$row['id']))}" title="编辑">移除</a>
+                            <a href="{:U('edit',array('id'=>$row['id']))}" title="编辑">编辑</a> |
+                            <a class="ajax-get" href="{:U('changeStatus',array('id'=>$row['id']))}" title="编辑">移除</a>
                         </td>
                     </tr>
                 </volist>

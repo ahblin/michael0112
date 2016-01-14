@@ -42,17 +42,23 @@
             <table cellpadding="3" cellspacing="1">
                 <tr>
                     <th>全选 <input type="checkbox" class="allChoose"></th>
-                                        <th>供应商名称</th>
-                                        <th>排序</th>
-                                        <th>供应商简介</th>
-                                        <th>是否显示</th>
-                                        <th>操作</th>
+                    <th>供应商名称</th>
+                    <th>排序</th>
+                    <th>供应商简介</th>
+                    <th>是否显示</th>
+                    <th>操作</th>
                 </tr>
                 <?php if(is_array($rows)): $i = 0; $__LIST__ = $rows;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row): $mod = ($i % 2 );++$i;?><tr>
                         <td width="30"><?php echo ($row["id"]); ?><input type="checkbox" name="id[]" value="<?php echo ($row["id"]); ?>" class="choose">
                         </td>
-                        <td class='first-cell' align='center'><?php echo ($row["name"]); ?></td><td align='center'><?php echo ($row["sort"]); ?></td><td align='center'><?php echo ($row["intro"]); ?></td><td align="center"><a class="ajax-get" href="<?php echo U('changeStatus',array('id'=>$row['id'],'status'=>(1-$row['status'])));?>"><img src="http://admin.shop.com/Public/images/<?php echo ($row["status"]); ?>.gif"/></a></td>                        <td align="center">
-                            <a class="ajax-post" href="<?php echo U('edit',array('id'=>$row['id']));?>" title="编辑">编辑</a> |
+                        <td class='first-cell' align='center'><?php echo ($row["name"]); ?></td>
+                        <td align='center'><?php echo ($row["sort"]); ?></td>
+                        <td align='center'><?php echo ($row["intro"]); ?></td>
+                        <td align="center"><a class="ajax-get"
+                                              href="<?php echo U('changeStatus',array('id'=>$row['id'],'status'=>(1-$row['status'])));?>"><img
+                                src="http://admin.shop.com/Public/images/<?php echo ($row["status"]); ?>.gif"/></a></td>
+                        <td align="center">
+                            <a href="<?php echo U('edit',array('id'=>$row['id']));?>" title="编辑">编辑</a> |
                             <a class="ajax-get" href="<?php echo U('changeStatus',array('id'=>$row['id']));?>" title="编辑">移除</a>
                         </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>

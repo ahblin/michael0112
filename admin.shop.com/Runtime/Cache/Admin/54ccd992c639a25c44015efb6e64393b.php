@@ -70,7 +70,7 @@
             <tr>
                 <td colspan="2" align="center"><br/>
                     <input type="hidden" name="id" value="<?php echo ($id); ?>">
-                    <input type="submit" class="button" value=" 确定 "/>
+                    <input type="submit" class="button ajax-post" value=" 确定 "/>
                     <input type="reset" class="button" value=" 重置 "/>
                 </td>
             </tr>

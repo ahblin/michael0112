@@ -62,7 +62,7 @@
                                               href="<?php echo U('changeStatus',array('id'=>$row['id'],'status'=>(1-$row['status'])));?>"><img
                                 src="http://admin.shop.com/Public/images/<?php echo ($row["status"]); ?>.gif"/></a></td>
                         <td align="center">
-                            <a class="ajax-post" href="<?php echo U('edit',array('id'=>$row['id']));?>" title="编辑">编辑</a> |
+                            <a href="<?php echo U('edit',array('id'=>$row['id']));?>" title="编辑">编辑</a> |
                             <a class="ajax-get" href="<?php echo U('changeStatus',array('id'=>$row['id']));?>" title="编辑">移除</a>
                         </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
