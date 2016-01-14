@@ -72,7 +72,7 @@
                 'fileTypeExts' : '*.gif; *.jpg; *.png',
                 'onUploadSuccess' : function(file, data, response) {
                     $('.upload-img-box').show();
-                    $('.upload-pre-item img').attr('src','__UPLOAD__'+data);
+                    $('.upload-pre-item img').attr('src','__UPLOAD__/'+data);
                     $('.logo').val(data);
                 },
                 'onUploadError' : function(file, errorCode, errorMsg, errorString) {

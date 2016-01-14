@@ -43,6 +43,7 @@ class BaseController extends Controller
         //将查询语句发配到网页,方便回显
         $pageResult['search'] = $search;
         $this->assign($pageResult);
+        $this->assign('meta_title',$this->meta_title);
         //分配好数据后,将访问的url地址保存到cookie里面,方便下面方法调用
         $urlmsg = $_SERVER['REQUEST_URI'];
         cookie('url', $urlmsg);

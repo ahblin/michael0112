@@ -2,11 +2,12 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>管理中心 - 商品供应商 </title>
+    <title>管理中心 - 商品<?php echo ($meta_title); ?> </title>
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="http://admin.shop.com/Public/css/general.css" rel="stylesheet" type="text/css"/>
     <link href="http://admin.shop.com/Public/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="http://admin.shop.com/Public/css/common.css" rel="stylesheet" type="text/css"/>
     <link href="http://admin.shop.com/Public/css/page.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="http://admin.shop.com/Public/js/jquery1-11.3.js"></script>
     <script type="text/javascript" src="http://admin.shop.com/Public/layer/layer.js"></script>
@@ -15,9 +16,9 @@
 </head>
 <body>
 <h1>
-    <span class="action-span"><a href="<?php echo U('add');?>">添加供应商</a></span>
+    <span class="action-span"><a href="<?php echo U('add');?>">添加<?php echo ($meta_title); ?></a></span>
     <span class="action-span1"><a href="#">管理中心</a></span>
-    <span id="search_id" class="action-span1"> - 商品供应商 </span>
+    <span id="search_id" class="action-span1"> - <?php echo ($meta_title); ?> </span>
 
     <div style="clear:both"></div>
 </h1>
@@ -30,9 +31,11 @@
         </form>
     </div>
 
-<input type="button" value=" 删除 " class="button ajax-post" url="<?php echo U('changeStatus');?>"/>
-<input type="button" value=" 显示 " class="button ajax-post" url="<?php echo U('changeStatus',array('status'=>1));?>"/>
-<input type="button" value=" 隐藏 " class="button ajax-post" url="<?php echo U('changeStatus',array('status'=>0));?>"/>
+
+    <input type="button" value=" 删除 " class="button ajax-post" url="<?php echo U('changeStatus');?>"/>
+    <input type="button" value=" 显示 " class="button ajax-post" url="<?php echo U('changeStatus',array('status'=>1));?>"/>
+    <input type="button" value=" 隐藏 " class="button ajax-post" url="<?php echo U('changeStatus',array('status'=>0));?>"/>
+
 
     <form method="post" action="" name="listForm">
         <div class="list-div" id="listDiv">

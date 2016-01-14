@@ -24,14 +24,14 @@
     <form method="post" action="{:U()}"enctype="multipart/form-data" >
         <table cellspacing="1" cellpadding="3" width="100%">
             <tr>
-                <td class="label"> 供应商名称</td>
+                <td class="label"> {$meta_title}名称</td>
                 <td>
                     <input type="text" name="name" maxlength="60" value="{$name}" />
                     <span class="require-field">*</span>
                 </td>
             </tr>
             <tr>
-                <td class="label"> 供应商描述</td>
+                <td class="label"> {$meta_title}描述</td>
                 <td>
                     <textarea  name="intro" cols="60" rows="4"  >{$intro}</textarea>
                 </td>
