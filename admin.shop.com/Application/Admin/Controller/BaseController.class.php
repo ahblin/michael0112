@@ -24,7 +24,7 @@ class BaseController extends Controller
 
     /**
      * 增删改查的查
-     *显示每页的信息和分页工具条
+     * 显示每页的信息和分页工具条
      */
     public function index()
     {

@@ -34,7 +34,7 @@
             <tr>
                 <td class="label">父分类</td>
                 <td>
-                    <input type='hidden' class="parent_id" name='parent_id'/>
+                    <input type='hidden' class="parent_id" name='parent_id' value="0"/>
                     <input type='text' class="parent_name" name='parent_name' maxlength='60' value='默认顶级分类' disabled="disabled"/>
                     <ul id="treeDemo" class="ztree" ></ul>
                 </td>
@@ -55,7 +55,7 @@
             <tr>
                 <td colspan="2" align="center"><br/>
                     <input type="hidden" name="id" value="<?php echo ($id); ?>">
-                    <input type="submit" class="button" value=" 确定 "/>
+                    <input type="submit" class="button " value=" 确定 "/>
                     <input type="reset" class="button" value=" 重置 "/>
                 </td>
             </tr>

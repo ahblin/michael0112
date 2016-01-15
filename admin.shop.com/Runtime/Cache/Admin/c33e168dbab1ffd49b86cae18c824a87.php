@@ -47,12 +47,12 @@
                 <?php if(is_array($rows)): $i = 0; $__LIST__ = $rows;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row): $mod = ($i % 2 );++$i;?><tr class="treegrid-<?php echo ($row["id"]); ?> <?php if(($row["parent_id"]) != "0"): ?>treegrid-parent-<?php echo ($row["parent_id"]); endif; ?>">
                         <td class='first-cell' align='left'><?php echo ($row["name"]); ?></td>
                         <td align='center'><?php echo ($row["intro"]); ?></td>
-                        <td align="center"><a
+                        <td align="center"><a class="ajax-get"
                                               href="<?php echo U('changeStatus',array('id'=>$row['id'],'status'=>(1-$row['status'])));?>"><img
                                 src="http://admin.shop.com/Public/images/<?php echo ($row["status"]); ?>.gif"/></a></td>
                         <td align="center">
-                            <a  href="<?php echo U('edit',array('id'=>$row['id']));?>" title="编辑">编辑</a> |
-                            <a  href="<?php echo U('changeStatus',array('id'=>$row['id']));?>" title="编辑">移除</a>
+                            <a href="<?php echo U('edit',array('id'=>$row['id']));?>" title="编辑">编辑</a> |
+                            <a class="ajax-get" href="<?php echo U('changeStatus',array('id'=>$row['id']));?>" title="编辑">移除</a>
                         </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
             </table>

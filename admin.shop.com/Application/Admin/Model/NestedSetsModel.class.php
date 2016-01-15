@@ -8,9 +8,17 @@
 
 namespace Admin\Model;
 
+
+/**
+ * 实现接口,组成sql语句,但是需要注意每一个方法具体的返回值
+ * Class NestedSetsModel
+ * @package Admin\Model
+ */
 class NestedSetsModel implements  DbMysqlInterfaceModel
 {
+    //定义下面方法需要的模型类
     private $model;
+
     public function __construct(){
         $this->model = M();
     }
@@ -41,7 +49,7 @@ class NestedSetsModel implements  DbMysqlInterfaceModel
         $finalSQL = $this->buildSQL(func_get_args());
         //$tempSQL = $this->buildSQL(func_get_args());
         //>>2.然后进行执行..
-        return  M()->execute($finalSQL);
+        return  $this->model->execute($finalSQL);
     }
 
 
@@ -64,7 +72,7 @@ class NestedSetsModel implements  DbMysqlInterfaceModel
         //循环剩下的$params,拼接成一个sql语句
         $tmp_sql = '';
         foreach($params[0] as $k =>$v){
-            /*//id字段自增,不加入sql
+            /*//id字段自增,不加入sql,如果不加此判断,需要到mysql.ini修改 sql-mod
             if($k=='id'){
                 continue;
             }*/
@@ -137,6 +145,13 @@ class NestedSetsModel implements  DbMysqlInterfaceModel
      */
     public function getRow($sql, array $args = array())
     {
+        //>>1.得到真正传递过来的参数拼装SQL
+        $finalSQL = $this->buildSQL(func_get_args());
+        //>>2.执行sql
+        $rows = $this->model->query($finalSQL);
+        return empty($rows)?false:$rows[0];  //查询出来一行就返回一行, 没有查询出来就返回false
+
+
         //得到所有参数,并构建sql语句
         /*$parames = func_get_args();
         $rows = array_shift($parames);
@@ -149,12 +164,6 @@ class NestedSetsModel implements  DbMysqlInterfaceModel
         //执行sql语句
         $result = $this->model->query($finalSQL);
         return empty($result)?false:$result[0];*/
-
-        //>>1.得到真正传递过来的参数拼装SQL
-        $finalSQL = $this->buildSQL(func_get_args());
-        //>>2.执行sql
-        $rows = M()->query($finalSQL);
-        return empty($rows)?false:$rows[0];  //查询出来一行就返回一行, 没有查询出来就返回false
     }
 
     public function getCol($sql, array $args = array())
@@ -166,14 +175,22 @@ class NestedSetsModel implements  DbMysqlInterfaceModel
 
     public function getOne($sql, array $args = array())
     {
-        echo 'getOne...';
+        //组成sql
+        $finalSQL = $this->buildSQL(func_get_args());
+        //得到二维数组
+        $rows = $this->model->query($finalSQL);
+        //取出需要返回的具体值
+        $row = array_values($rows[0]);
+        return empty($row)?false:$row[0];
+
+        /*dump($row[0]);
         exit;
         $tempSQL = $this->buildSQL(func_get_args());
         $model = M();
         $rows = $model->query($tempSQL); //得到二维数组
         $row = $rows[0]; //得到其中的第一个小数组
         $values = array_values($row);  //小数组中的值
-        return $values[0];  //值的第一元素.
+        return $values[0];  //值的第一元素.*/
     }
 
 
