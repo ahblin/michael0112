@@ -17,7 +17,7 @@
 <body>
 <h1>
     <span class="action-span"><a href="<?php echo U('index');?>"> <?php echo mb_substr($meta_title,2,null,'utf-8');?>列表</a></span>
-    <span class="action-span1"><a href="#"> 管理中心</a></span>
+    <span class="action-span1"><a href="<?php echo U('Index/index');?>"> 管理中心</a></span>
     <span id="search_id" class="action-span1"> -  <?php echo ($meta_title); ?> </span>
     <div style="clear:both"></div>
 </h1>

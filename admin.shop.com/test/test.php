@@ -1,11 +1,15 @@
 <?php
 header("Content-type:text/html;charset=utf-8");
 
-$str = "品牌简介@textarea";
-$str = "是否显示@radio|1=是&0=否";
-$patten = '/(.*)@([a-z]*)\|?(.*)/';
-preg_match($patten,$str,$result);
+$arr = array(
+    array('abc' => 1, 'value' => 100),
+    array('abc' => 2, 'value' => 200),
+    array('abc' => 3, 'value' => 300),
+);
+
 echo '<pre>';
-var_dump($result);
-?>
-<input type="text" value="11111" readonly>
+$res = array();
+foreach ($arr as $v) {
+    $res[$v['abc']] = $v['value'];
+}
+var_dump($res);
