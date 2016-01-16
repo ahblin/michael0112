@@ -119,7 +119,7 @@
       <li style="border-left:none;"><a href="index.php?act=first" target="main-frame">开店向导</a></li>
     </ul>
     <div id="send_info" style="padding: 5px 10px 0 0; clear:right;text-align: right; color: #FF9900;width:40%;float: right;">
-        <a class="fix-submenu"><?php echo ($_SESSION['userinfo']['name']); ?></a>
+        <a class="fix-submenu"><?php echo ((isset($_SESSION['userinfo']['name']) && ($_SESSION['userinfo']['name'] !== ""))?($_SESSION['userinfo']['name']):'欢迎游客'); ?></a>
         <a href="index.php?act=clear_cache" target="main-frame" class="fix-submenu">清除缓存</a>
         <a href="<?php echo U('User/logout');?>" target="_top" class="fix-submenu">退出</a>
     </div>

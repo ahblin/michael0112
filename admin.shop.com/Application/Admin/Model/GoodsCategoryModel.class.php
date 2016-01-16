@@ -17,7 +17,7 @@ class GoodsCategoryModel extends BaseModel
         array('level','require','层级不能够为空'),
         array('status','require','是否显示不能够为空'),
     );
-    public function getList($wheres = array())
+    public function getListWithPage($wheres = array())
     {
         //定义每页显示的数据的限制  status>-1
         $wheres['status'] = array('gt', -1);
@@ -26,9 +26,9 @@ class GoodsCategoryModel extends BaseModel
         //将结果返回
         return array('rows' => $rows);
     }
-    public function getJson(){
+    public function getJson($fields){
         $wheres['status'] = array('gt', -1);
-        $rows = $this->field('id,name,parent_id')->where($wheres)->order('lft')->select();
+        $rows = $this->field($fields)->where($wheres)->order('lft')->select();
         return json_encode($rows);
     }
     public function add(){
@@ -53,5 +53,19 @@ class GoodsCategoryModel extends BaseModel
 
         //>>4.需要将请求中的其他数据修改到数据库中
         return parent::save();
+    }
+
+
+    public function changeStatus($id, $status = -1)
+    {
+        //根据自己的id,找到子孙id,如果没有子孙,返回的是自己的id
+        $sql = "select child.id from  goods_category as child,goods_category as parent where  parent.id = {$id}  and child.lft>=parent.lft  and child.rgt<=parent.rgt";
+        $rows = $this->query($sql);
+        $id  = array_column($rows,'id');
+        $data = array('status' => $status, 'id' => array('in', $id));
+        if ($status == -1) {
+            $data['name'] = array('exp', "CONCAT(name,'_del')");
+        }
+        return parent::save($data);
     }
 }

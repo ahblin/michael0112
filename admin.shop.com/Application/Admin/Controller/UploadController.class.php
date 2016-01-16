@@ -16,6 +16,7 @@ class UploadController extends Controller
 {
     public function upload(){
         $dir = I('post.dir');
+        //如果要将配置放到配置文件中,需要将$dir提出来
         $config = array(
             //'autoSub'      => true, //自动子目录保存文件
             //'subName'      => array('date', 'Y-m-d'), //子目录创建方式，[0]-函数名，[1]-参数，多个参数使用数组

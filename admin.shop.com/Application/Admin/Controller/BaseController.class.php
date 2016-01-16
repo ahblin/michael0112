@@ -15,6 +15,8 @@ class BaseController extends Controller
 {
     //定义模型类
     protected $model;
+    //定义一个变量限制在create之后还需不需要将post数据传给模型处理
+    protected $trans=false;//默认不传
 
     //避免覆盖父类构造函数
     public function _initialize()
@@ -39,7 +41,7 @@ class BaseController extends Controller
         if (!empty($search)) {
             $wheres['name'] = array('like', "%$search%");
         }
-        $pageResult = $this->model->getList($wheres);
+        $pageResult = $this->model->getListWithPage($wheres);
         //将查询语句发配到网页,方便回显
         $pageResult['search'] = $search;
         $this->assign($pageResult);
@@ -54,7 +56,7 @@ class BaseController extends Controller
     /**
      * 钩子方法,在每个页面展示之前,用于各个控制器操作或获得其他信息
      */
-    protected function _beforDisplay(){}
+    protected function _befor_display(){}
 
     /**
      * 增删改查的改
@@ -65,7 +67,7 @@ class BaseController extends Controller
         if (IS_POST) {
             //获得数据
             if ($this->model->create() !== false) {
-                if ($this->model->save() !== false) {
+                if ($this->model->save($this->trans?I('post.'):'') !== false) {
                     //成功后返回cookie保存的地址
                     $this->success('操作成功!', cookie('url'));
                     return;
@@ -77,7 +79,7 @@ class BaseController extends Controller
             $row = $this->model->find($id);
             //将数据分配到页面
             $this->assign($row);
-            $this->_beforDisplay();
+            $this->_befor_display();
             $this->assign('meta_title', '编辑' . $this->meta_title);
             //选择显示页面
             $this->display('edit');
@@ -93,7 +95,7 @@ class BaseController extends Controller
         if (IS_POST) {
             //获得数据
             if ($this->model->create() !== false) {
-                if ($this->model->add() !== false) {
+                if ($this->model->add($this->trans?I('post.'):'') !== false) {
                     //成功后返回cookie保存的地址
                     $this->success('操作成功!', cookie('url'));
                     return;
@@ -101,7 +103,7 @@ class BaseController extends Controller
             };
             $this->error('操作失败' . model_error($this->model));
         } else {
-            $this->_beforDisplay();
+            $this->_befor_display();
             $this->assign('meta_title', '添加' . $this->meta_title);
             $this->display('edit');
         }

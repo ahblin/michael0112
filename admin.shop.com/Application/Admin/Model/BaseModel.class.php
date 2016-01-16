@@ -17,7 +17,7 @@ class BaseModel extends Model
     //开启批量验证
     protected $patchValidate = true;
 
-    public function getList($wheres = array())
+    public function getListWithPage($wheres = array())
     {
         //定义pageRasult为数组,rows为每页数据显示,pageTool是分页工具条
         //定义每页显示的数据的限制  status>-1
@@ -44,6 +44,14 @@ class BaseModel extends Model
     }
 
     /**
+     * 查询出状态大于-1
+     */
+    public function getListNoPage($field = "*")
+    {
+        return $this->field($field)->where(array('status' => array('gt', -1)))->select();
+    }
+
+    /**
      * 点击删除,将status状态设置为-1
      * @param $id
      * @return bool
@@ -61,13 +69,6 @@ class BaseModel extends Model
      */
     public function changeStatus($id, $status = -1)
     {
-        //如果id是数组(多选框),则不需要查找
-        if(!is_array($id)){
-            //根据自己的id,找到子孙id,如果没有子孙,返回的是自己的id
-            $sql = "select child.id from  goods_category as child,goods_category as parent where  parent.id = {$id}  and child.lft>=parent.lft  and child.rgt<=parent.rgt";
-            $rows = $this->query($sql);
-            $id  = array_column($rows,'id');
-        }
         $data = array('status' => $status, 'id' => array('in', $id));
         if ($status == -1) {
             $data['name'] = array('exp', "CONCAT(name,'_del')");

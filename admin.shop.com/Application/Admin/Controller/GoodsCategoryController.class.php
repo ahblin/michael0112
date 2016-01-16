@@ -9,8 +9,8 @@ class GoodsCategoryController extends BaseController
     /**
      * 钩子方法,用于覆盖父类钩子方法
      */
-    protected function _beforDisplay(){
-        $jsonlist = $this->model->getJson();
+    protected function _befor_display(){
+        $jsonlist = $this->model->getJson('id,name,parent_id');
         $this->assign('zNodes',$jsonlist);
     }
 }

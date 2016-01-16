@@ -56,20 +56,21 @@ function show_msg(data) {
     //如果成功,status则==1,失败==0
     if (data.status) {
         layer.msg(data.info, {
-            icon: 1,
-            offset: 0,
-            shift: 0,
-            time: 1000,
+            icon: 1,//图标0-6
+            offset: 0,//位置距离上边距
+            shift: 0, //动画类型0-6
+            time: 1000,//出现时长
         }, function () {
+            //弹出框消失后的操作(回调函数)
             location.href = data.url;
         })
 
     } else {
         layer.msg(data.info, {
-            icon: 2,
-            offset: 0,
-            shift: 0,
-            time: 1000,
+            icon: 2,//图标0-6
+            offset: 0,//位置距离上边距
+            shift: 0, //动画类型0-6
+            time: 1000,//出现时长
         })
     }
 }

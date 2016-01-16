@@ -13,13 +13,13 @@
 </head>
 <body>
 <h1>
-    <span class="action-span"><a href="<?php echo U('Index/index');?>">首页</a></span>
+    <span class="action-span"><a href="<?php echo U('');?>">首页</a></span>
     <span class="action-span1"><a href="#"> 管理中心</a></span>
     <span id="search_id" class="action-span1"> - <?php echo ($meta_title); ?> </span>
     <div style="clear:both"></div>
 </h1>
 <div class="main-div">
-    <form method="post" action="<?php echo U('Index/index');?>"enctype="multipart/form-data" >
+    <form method="post" action="<?php echo U();?>"enctype="multipart/form-data" >
         <table cellspacing="1" cellpadding="3" width="100%">
             <tr>
                 <td class="label"></td>

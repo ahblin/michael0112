@@ -85,7 +85,7 @@ class AutoController extends Controller
             $index_path = $edit_path.'/index.html';
             file_put_contents($index_path,$index_model);
             //所有代码执行完毕,跳转
-            $this->success('添加成功!',U('index'));
+            $this->success('添加成功!',U('Index/index'));
         } else {
             $this->assign('meta_title','自动生成控制器和模型');
             $this->display('edit');
