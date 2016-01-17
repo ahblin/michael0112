@@ -23,29 +23,37 @@
 
     <form method="post" action="<?php echo U();?>" enctype="multipart/form-data">
         <table cellspacing="1" cellpadding="3" width="100%">
-            <tr>
-                <td class="label">供应商名称</td>
+                        <tr>
+                <td class="label">会员级别名称</td>
                 <td>
-                    <input type='text' name='name' maxlength='60' value='<?php echo ($name); ?>'/></td>
+                    <input type='text' name='name' maxlength='60' value='<?php echo ($name); ?>'/>                </td>
             </tr>
-            <tr>
-                <td class="label">排序</td>
+                        <tr>
+                <td class="label">最低积分</td>
                 <td>
-                    <input type='text' name='sort' maxlength='40' size='15' value='<?php echo ((isset($sort) && ($sort !== ""))?($sort):20); ?>'/></td>
+                    <input type='text' name='low' maxlength='60' value='<?php echo ($low); ?>'/>                </td>
             </tr>
-            <tr>
-                <td class="label">供应商简介</td>
+                        <tr>
+                <td class="label">最高积分</td>
                 <td>
-                    <textarea name='intro' cols='60' rows='4'><?php echo ($intro); ?></textarea></td>
+                    <input type='text' name='high' maxlength='60' value='<?php echo ($high); ?>'/>                </td>
             </tr>
-            <tr>
+                        <tr>
+                <td class="label">折扣</td>
+                <td>
+                    <input type='text' name='discount' maxlength='60' value='<?php echo ($discount); ?>'/>                </td>
+            </tr>
+                        <tr>
+                <td class="label">会员级别简介</td>
+                <td>
+                    <textarea name='intro' cols='60' rows='4'><?php echo ($intro); ?></textarea>                </td>
+            </tr>
+                        <tr>
                 <td class="label">是否显示</td>
                 <td>
-                    <input type='radio' class='status' name='status' value='1'/> 是<input type='radio' class='status'
-                                                                                         name='status' value='0'/> 否
-                </td>
+                    <input type='radio' class='status' name='status' value='1'/> 是<input type='radio' class='status' name='status' value='0'/> 否                </td>
             </tr>
-            <tr>
+                        <tr>
                 <td colspan="2" align="center"><br/>
                     <input type="hidden" name="id" value="<?php echo ($id); ?>">
                     <input type="submit" class="button ajax-post" value=" 确定 "/>

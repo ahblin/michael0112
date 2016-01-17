@@ -24,7 +24,7 @@ class BaseModel extends Model
         $wheres['status'] = array('gt', -1);
         //分页工具条
         $totalRows = $this->where($wheres)->count();
-        $listRows = 2;
+        $listRows = 5;
         //生成page对象,并设置分页工具条的显示状态
         $pageModel = new Page($totalRows, $listRows);
         //设置分页工具条的外观
@@ -46,9 +46,10 @@ class BaseModel extends Model
     /**
      * 查询出状态大于-1
      */
-    public function getListNoPage($field = "*")
+    public function getListNoPage($field = "*",$wheres=array())
     {
-        return $this->field($field)->where(array('status' => array('gt', -1)))->select();
+        $wheres['status'] = array('gt', -1);
+        return $this->field($field)->where($wheres)->select();
     }
 
     /**

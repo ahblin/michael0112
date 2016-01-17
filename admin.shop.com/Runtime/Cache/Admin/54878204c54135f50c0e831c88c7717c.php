@@ -125,12 +125,15 @@
                 </tr>
             </table>
             <table style="display: none">
-                <tr>
-                    <td class="label">会员价格</td>
-                    <td>
-                        <input type="text" name="menber_price">
-                    </td>
-                </tr>
+                <?php if(is_array($member_level_list)): $i = 0; $__LIST__ = $member_level_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$member_level): $mod = ($i % 2 );++$i;?><tr>
+                        <td class="label">
+                            <?php echo ($member_level["name"]); ?>:
+                        </td>
+                        <td>
+                            <input type="text" name="member_level_price[<?php echo ($member_level['id']); ?>]" value="<?php echo ($goods_member_price[$member_level['id']]); ?>">
+                            <input type="hidden" name="member_level_id[<?php echo ($member_level['id']); ?>]" value="<?php echo ($member_level['id']); ?>">
+                        </td>
+                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
             </table>
             <table style="display: none">
                 <tr>
@@ -289,7 +292,6 @@
                     gd_status.push(obj.value);
                 };
             }
-            console.debug(gd_status);
             $('.goods_status').val(gd_status);
 
             /**********************************多选回显 结束*************************************************/

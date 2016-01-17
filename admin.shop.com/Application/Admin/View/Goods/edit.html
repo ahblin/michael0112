@@ -105,12 +105,17 @@
                 </tr>
             </table>
             <table style="display: none">
-                <tr>
-                    <td class="label">会员价格</td>
-                    <td>
-                        <input type="text" name="menber_price">
-                    </td>
-                </tr>
+                <volist name="member_level_list" id="member_level">
+                    <tr>
+                        <td class="label">
+                            {$member_level.name}:
+                        </td>
+                        <td>
+                            <input type="text" name="member_level_price[{$member_level['id']}]" value="{$goods_member_price[$member_level['id']]}">
+                            <input type="hidden" name="member_level_id[{$member_level['id']}]" value="{$member_level['id']}">
+                        </td>
+                    </tr>
+                </volist>
             </table>
             <table style="display: none">
                 <tr>
@@ -264,7 +269,6 @@
                     gd_status.push(obj.value);
                 };
             }
-            console.debug(gd_status);
             $('.goods_status').val(gd_status);
 
             /**********************************多选回显 结束*************************************************/

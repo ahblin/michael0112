@@ -24,7 +24,6 @@ class GoodsModel extends BaseModel
     public function add($postData){
         $this->startTrans();//开启事物
 
-
         //更新goods表
         $this->dealStatus();//处理status
         $id = parent::add();
@@ -50,6 +49,11 @@ class GoodsModel extends BaseModel
             $this->error = '保存商品描述失败!';
             return false;
         }
+
+        //更新goods_member_price表
+        $result = $this->dealPrice($id,$postData);
+
+
         //提交事务
         $this->commit();
         return $id;
@@ -80,12 +84,43 @@ class GoodsModel extends BaseModel
             $this->error = '保存商品描述失败!';
             return false;
         }
+
+        //更新goods_member_price表
+        $result = $this->dealPrice($id,$postData);
+
         //提交事务
         $this->commit();
         return $rst;
 
 
     }
+
+    private function dealPrice($id,$postData){
+        $model = D('GoodsMemberPrice');
+
+        //先删除id对应的数据
+        $result = $model->where("goods_id=$id")->delete();
+        if($result===false){
+            $this->rollback();
+            $this->error = '保存商品会员价格失败!';
+            return false;
+        }
+
+        //再输入id相关的信息
+        $adddvalue=array();
+        foreach($postData['member_level_price'] as $k=> $v){
+            $adddvalue[] = array('goods_id'=>$id,'member_level_id'=>$postData['member_level_id'][$k],'price'=>$postData['member_level_price'][$k]);
+        }
+        $result = $model->addAll($adddvalue);
+        if($result===false){
+            $this->rollback();
+            $this->error = '保存商品分类价格失败!';
+            return false;
+        }
+        return $result;
+    }
+
+
     private function dealStatus(){
         $goods_status=0;
         foreach($this->data['goods_status'] as $v){
@@ -118,6 +153,18 @@ class GoodsModel extends BaseModel
             $this->error = '删除描述失败!';
             return false;
         }
+
+        //删除goods_member_price表信息
+        $model = D('GoodsMemberPrice');
+
+        //先删除id对应的数据
+        $result = $model->where("goods_id=$id")->delete();
+        if($result===false){
+            $this->rollback();
+            $this->error = '删除分级价格失败!';
+            return false;
+        }
+
         $this->commit();
         return $rst;
     }

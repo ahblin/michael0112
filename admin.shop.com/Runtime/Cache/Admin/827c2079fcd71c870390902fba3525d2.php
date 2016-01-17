@@ -42,9 +42,11 @@
             <table cellpadding="3" cellspacing="1">
                 <tr>
                     <th>全选 <input type="checkbox" class="allChoose"></th>
-                    <th>供应商名称</th>
-                    <th>排序</th>
-                    <th>供应商简介</th>
+                    <th>会员级别名称</th>
+                    <th>最低积分</th>
+                    <th>最高积分</th>
+                    <th>折扣</th>
+                    <th>会员级别简介</th>
                     <th>是否显示</th>
                     <th>操作</th>
                 </tr>
@@ -52,7 +54,9 @@
                         <td width="30"><?php echo ($row["id"]); ?><input type="checkbox" name="id[]" value="<?php echo ($row["id"]); ?>" class="choose">
                         </td>
                         <td class='first-cell' align='center'><?php echo ($row["name"]); ?></td>
-                        <td align='center'><?php echo ($row["sort"]); ?></td>
+                        <td align='center'><?php echo ($row["low"]); ?></td>
+                        <td align='center'><?php echo ($row["high"]); ?></td>
+                        <td align='center'><?php echo ($row["discount"]); ?></td>
                         <td align='center'><?php echo ($row["intro"]); ?></td>
                         <td align="center"><a class="ajax-get"
                                               href="<?php echo U('changeStatus',array('id'=>$row['id'],'status'=>(1-$row['status'])));?>"><img
