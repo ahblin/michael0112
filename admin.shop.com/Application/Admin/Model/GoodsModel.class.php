@@ -21,6 +21,31 @@ class GoodsModel extends BaseModel
         array('goods_status','require','商品状态不能够为空'),
         array('status','require','是否显示不能够为空'),*/
             );
+
+    /**
+     * 对得到的rows数据进一步处理
+     * @param $rows
+     */
+    public function _setRows(&$rows){
+        foreach($rows as &$row){
+            $row['is_best'] = ($row['goods_status'] & 1);
+            $row['is_new'] = (($row['goods_status'] & 2) >>1);
+            $row['is_hot'] = (($row['goods_status'] & 4) >>2);
+        }
+        unset($row);//避免引用赋值造成错误
+    }
+
+    /**
+     * 连表查询
+     */
+    public function _setModel(){
+        $this->join('__GOODS_CATEGORY__ AS gc ON obj.goods_category_id = gc.id');
+        $this->join('__BRAND__ AS b ON obj.brand_id = b.id');
+        $this->join('__SUPPLIER__ AS s ON obj.supplier_id = s.id');
+        $this->field('obj.*, gc. NAME AS goods_category_name,b. NAME AS brand_name,s.NAME AS supplier_name');
+    }
+
+
     public function add($postData){
         $this->startTrans();//开启事物
 

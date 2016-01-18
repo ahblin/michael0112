@@ -21,10 +21,12 @@ class BaseModel extends Model
     {
         //定义pageRasult为数组,rows为每页数据显示,pageTool是分页工具条
         //定义每页显示的数据的限制  status>-1
-        $wheres['status'] = array('gt', -1);
+        $this->alias('obj');//设置表的别名,方便连表查询
+        $wheres['obj.status'] = array('gt', -1);
         //分页工具条
         $totalRows = $this->where($wheres)->count();
         $listRows = 5;
+
         //生成page对象,并设置分页工具条的显示状态
         $pageModel = new Page($totalRows, $listRows);
         //设置分页工具条的外观
@@ -37,11 +39,35 @@ class BaseModel extends Model
                 $pageModel->firstRow = 0;
             }
         }
+
+        $this->alias('obj');//设置表的别名,方便连表查询
+        //设置连表查询的钩子方法
+        $this->_setModel();
         //每页显示条数
         $rows = $this->where($wheres)->limit($pageModel->firstRow, $pageModel->listRows)->select();
+
+        //设置钩子方法来修改rows中的数据
+        $this->_setRows($rows);
         //将结果返回
         return array('rows' => $rows, 'pageTool' => $pageTool);
     }
+
+
+    /**
+     * 处理得到的rows数据
+     * @param $rows
+     */
+    public function _setRows(&$rows){
+
+    }
+
+    /**
+     * 连表查询
+     */
+    public function _setModel(){
+
+    }
+
 
     /**
      * 查询出状态大于-1

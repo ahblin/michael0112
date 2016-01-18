@@ -77,5 +77,21 @@ class GoodsController extends BaseController
      * @param $name
      */
     public function _before_index_display(){
+        //准备分类列表
+        $model = D('GoodsCategory');
+        $category_list = $model->getListNoPage('id,name');
+        $this->assign('category_list',$category_list);
+
+
+        //准备品牌列表
+        $model = D('Brand');
+        $brand_list = $model->getListNoPage('id,name');
+        $this->assign('brand_lists',$brand_list);
+
+
+        //准备供货商列表
+        $model = D('Supplier');
+        $supplier_list = $model->getListNoPage('id,name');
+        $this->assign('supplier_lists',$supplier_list);
     }
 }

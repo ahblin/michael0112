@@ -26,7 +26,10 @@
     <div class="form-div">
         <form action="" name="searchForm">
             <img src="http://admin.shop.com/Public/images/icon_search.gif" width="26" height="22" border="0" alt="search"/>
-            <input type="text" name="search" size="15" value="<?php echo ($search); ?>"/>
+            <input type="text" name="search" size="15" value="<?php echo ($search); ?>" placeholder="请输入关键字"/>
+            <input type="text" name="search" class="goods_category" size="15" value="<?php echo ($search); ?>" placeholder="请选择分类" readonly="readonly"/>
+            <?php echo arr2select('brand_list_id',$brand_lists);?>
+            <?php echo arr2select('supplier_list_id',$supplier_lists);?>
             <input type="submit" value=" 搜索 " class="button"/>
         </form>
     </div>
@@ -50,9 +53,10 @@
                     <th>供货商</th>
                     <th>本店价格</th>
                     <th>市场价格</th>
-                    <th>商品LOGO</th>
+                    <th>精品</th>
+                    <th>新品</th>
+                    <th>热销</th>
                     <th>库存</th>
-                    <th>商品状态</th>
                     <th>是否显示</th>
                     <th>操作</th>
                 </tr>
@@ -62,14 +66,15 @@
                         <td class='first-cell' align='center'><?php echo ($row["name"]); ?></td>
                         <td align='center'><?php echo ($row["short_name"]); ?></td>
                         <td align='center'><?php echo ($row["sn"]); ?></td>
-                        <td align='center'><?php echo ($row["goods_category_id"]); ?></td>
-                        <td align='center'><?php echo ($row["brand_id"]); ?></td>
-                        <td align='center'><?php echo ($row["supplier_id"]); ?></td>
+                        <td align='center'><?php echo ($row["goods_category_name"]); ?></td>
+                        <td align='center'><?php echo ($row["brand_name"]); ?></td>
+                        <td align='center'><?php echo ($row["supplier_name"]); ?></td>
                         <td align='center'><?php echo ($row["shop_price"]); ?></td>
                         <td align='center'><?php echo ($row["market_price"]); ?></td>
-                        <td align='center'><img src="http://admin.shop.com/Uploads/<?php echo ($row["logo"]); ?>" width="30"></td>
+                        <td align='center'><img src="http://admin.shop.com/Public/images/<?php echo ($row["is_best"]); ?>.gif"/></td>
+                        <td align='center'><img src="http://admin.shop.com/Public/images/<?php echo ($row["is_new"]); ?>.gif"/></td>
+                        <td align='center'><img src="http://admin.shop.com/Public/images/<?php echo ($row["is_hot"]); ?>.gif"/></td>
                         <td align='center'><?php echo ($row["stock"]); ?></td>
-                        <td align='center'><?php echo ($row["goods_status"]); ?></td>
                         <td align="center">
                             <a class="ajax-get" href="<?php echo U('changeStatus',array('id'=>$row['id'],'status'=>(1-$row['status'])));?>">
                                 <img src="http://admin.shop.com/Public/images/<?php echo ($row["status"]); ?>.gif"/>
@@ -88,7 +93,15 @@
     </form>
 
 
-<!--为以后的子模板预留js的位置-->
+
+    <script>
+        $(function(){
+            $('.goods_category').click(function(){
+                alert(1111);
+            })
+        })
+    </script>
+
 <div id="footer">
     Made By Michael
 </div>

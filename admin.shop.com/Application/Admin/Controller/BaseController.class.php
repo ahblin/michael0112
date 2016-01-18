@@ -41,11 +41,6 @@ class BaseController extends Controller
         if (!empty($search)) {
             $wheres['name'] = array('like', "%$search%");
         }
-
-        //设定钩子方法,为了子类覆盖,为主页显示之前提供数据
-        $this->_before_index_display();
-
-
         $pageResult = $this->model->getListWithPage($wheres);
         //将查询语句发配到网页,方便回显
         $pageResult['search'] = $search;
@@ -54,6 +49,9 @@ class BaseController extends Controller
         //分配好数据后,将访问的url地址保存到cookie里面,方便下面方法调用
         $urlmsg = $_SERVER['REQUEST_URI'];
         cookie('url', $urlmsg);
+
+        //设定钩子方法,为了子类覆盖,为主页显示之前提供数据
+        $this->_before_index_display();
         $this->display('index');
     }
 
