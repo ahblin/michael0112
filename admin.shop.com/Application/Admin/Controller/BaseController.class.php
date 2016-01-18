@@ -41,6 +41,11 @@ class BaseController extends Controller
         if (!empty($search)) {
             $wheres['name'] = array('like', "%$search%");
         }
+
+        //设定钩子方法,为了子类覆盖,为主页显示之前提供数据
+        $this->_before_index_display();
+
+
         $pageResult = $this->model->getListWithPage($wheres);
         //将查询语句发配到网页,方便回显
         $pageResult['search'] = $search;
@@ -54,9 +59,15 @@ class BaseController extends Controller
 
 
     /**
+     * 用于子类覆盖,为了再index显示之前提供数据
+     */
+    protected function _before_index_display(){
+
+    }
+    /**
      * 钩子方法,在每个页面展示之前,用于各个控制器操作或获得其他信息
      */
-    protected function _befor_display(){}
+    protected function _before_edit_display(){}
 
     /**
      * 增删改查的改
@@ -79,7 +90,7 @@ class BaseController extends Controller
             $row = $this->model->find($id);
             //将数据分配到页面
             $this->assign($row);
-            $this->_befor_display();
+            $this->_before_edit_display();
             $this->assign('meta_title', '编辑' . $this->meta_title);
             //选择显示页面
             $this->display('edit');
@@ -103,7 +114,7 @@ class BaseController extends Controller
             };
             $this->error('操作失败' . model_error($this->model));
         } else {
-            $this->_befor_display();
+            $this->_before_edit_display();
             $this->assign('meta_title', '添加' . $this->meta_title);
             $this->display('edit');
         }

@@ -52,11 +52,56 @@ class GoodsModel extends BaseModel
 
         //更新goods_member_price表
         $result = $this->dealPrice($id,$postData);
+        if($result===false){
+            $this->rollback();
+            $this->error = '保存商品分类价格失败!';
+            return false;
+        }
+
+        //更新相册表
+        $result = $this->dealPhoto($id,$postData);
+        if($result===false){
+            $this->rollback();
+            $this->error = '保存商品相册失败!';
+            return false;
+        }
+
+        //更新相关文章表
+        $result = $this->dealArticle($id,$postData);
+        if($result===false){
+            $this->rollback();
+            $this->error = '保存商品文章失败!';
+            return false;
+        }
+
+
 
 
         //提交事务
         $this->commit();
         return $id;
+    }
+
+
+    /**
+     * 处理
+     */
+    protected function dealArticle($id,$postData){
+        $model = D('GoodsArticle');
+        $addvalue=array();
+
+        //先删除,再更新
+        $model->where(array('goods_id'=>$id))->delete();
+
+        //如果没有文章,不处理,直接返回
+        if(empty($postData['article_ids'])){
+            return true;
+        }
+        foreach($postData['article_ids'] as $k => $v){
+            $addvalue[] =array('goods_id'=>$id,'article_id'=>$postData['article_ids'][$k]);
+        }
+        $result = $model->addAll($addvalue);
+        return $result;
     }
 
     /**
@@ -66,6 +111,7 @@ class GoodsModel extends BaseModel
      * @return bool
      */
     public function save($postData){
+
         $id = $this->data['id'];
         $this->startTrans();//开启事物
 
@@ -88,6 +134,22 @@ class GoodsModel extends BaseModel
         //更新goods_member_price表
         $result = $this->dealPrice($id,$postData);
 
+        //更新相册表
+        $result = $this->dealPhoto($id,$postData);
+        if($result===false){
+            $this->rollback();
+            $this->error = '保存商品相册失败!';
+            return false;
+        }
+
+        //更新文章表
+        $result = $this->dealArticle($id,$postData);
+        if($result===false){
+            $this->rollback();
+            $this->error = '保存商品文章失败!';
+            return false;
+        }
+
         //提交事务
         $this->commit();
         return $rst;
@@ -95,14 +157,34 @@ class GoodsModel extends BaseModel
 
     }
 
+    public function dealPhoto($id,$postData){
+        $model = D('GoodsPhoto');
+        $addvalue=array();
+
+        //如果没有照片,不处理,直接返回
+        if(empty($postData['goods_photo_paths'])){
+            return true;
+        }
+        foreach($postData['goods_photo_paths'] as $k => $v){
+            $addvalue[] =array('goods_id'=>$id,'path'=>$postData['goods_photo_paths'][$k]);
+        }
+        $result = $model->addAll($addvalue);
+
+        return $result;
+    }
+
+    /**
+     * 会员级别的价格处理
+     * @param $id
+     * @param $postData
+     * @return bool|mixed|string
+     */
     private function dealPrice($id,$postData){
         $model = D('GoodsMemberPrice');
 
         //先删除id对应的数据
         $result = $model->where("goods_id=$id")->delete();
         if($result===false){
-            $this->rollback();
-            $this->error = '保存商品会员价格失败!';
             return false;
         }
 
@@ -112,11 +194,6 @@ class GoodsModel extends BaseModel
             $adddvalue[] = array('goods_id'=>$id,'member_level_id'=>$postData['member_level_id'][$k],'price'=>$postData['member_level_price'][$k]);
         }
         $result = $model->addAll($adddvalue);
-        if($result===false){
-            $this->rollback();
-            $this->error = '保存商品分类价格失败!';
-            return false;
-        }
         return $result;
     }
 

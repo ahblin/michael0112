@@ -35,6 +35,7 @@
     </div>
     <div id="tabbody-div">
         <form method="post" action="<?php echo U();?>" enctype="multipart/form-data">
+            <!--通用信息-->
             <table cellspacing="1" cellpadding="3" width="100%">
                 <tr>
                     <td class="label">商品名称</td>
@@ -90,7 +91,7 @@
 
                         <div class="upload-img-box" style="display: none">
                             <div class="upload-pre-item" >
-                                <img src="http://php1009-0114.b0.upaiyun.com/<?php echo ($logo); ?>">
+                                <img src="http://admin.shop.com/Uploads/<?php echo ($logo); ?>">
                             </div>
                         </div>
                     </td>
@@ -117,6 +118,7 @@
                     </td>
                 </tr>
             </table>
+            <!--详细描述-->
             <table style="display: none">
                 <tr>
                     <td colspan="2">
@@ -124,6 +126,7 @@
                     </td>
                 </tr>
             </table>
+            <!--会员价格-->
             <table style="display: none">
                 <?php if(is_array($member_level_list)): $i = 0; $__LIST__ = $member_level_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$member_level): $mod = ($i % 2 );++$i;?><tr>
                         <td class="label">
@@ -135,6 +138,7 @@
                         </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
             </table>
+            <!--商品属性-->
             <table style="display: none">
                 <tr>
                     <td class="label">商品属性</td>
@@ -143,29 +147,82 @@
                     </td>
                 </tr>
             </table>
-            <table style="display: none">
-                <tbody><tr>
-                    <td class="label">商品相册</td>
-                    <td></td>
-                </tr>
+            <!--相册列表-->
+            <style type="text/css">
+                .upload-pre-item {
+                    display: block;
+                    float: left;
+                    margin: 5px;
+                    position: relative;
+                }
+
+                .upload-pre-item a {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                }
+            </style>
+            <table cellspacing="1" cellpadding="3" width="100%" style="display: none">
                 <tr>
-                    <td colspan="2">
-                        <a href="javascript:;" onclick="addImg(this)">[+]</a>
-                        图片描述 <input type="text" name="img_desc[]" size="20">
-                        上传文件 <input type="file" name="img_url[]">
-                        <input type="text" size="40" value="或者输入外部图片链接地址" style="color:#aaa;" onfocus="if (this.value == '或者输入外部图片链接地址'){this.value='http://';this.style.color='#000';}" name="img_file[]">
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table style="display: none">
-                <tr>
-                    <td class="label">关联文章</td>
                     <td>
-                        <input type="text" name="article-tab">
+                        <div id="upload-img-box" class="upload-img-box">
+                            <!--循环输出每个照片信息-->
+                            <?php if(is_array($goods_photos)): $i = 0; $__LIST__ = $goods_photos;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$goodsPhoto): $mod = ($i % 2 );++$i;?><div class="upload-pre-item">
+                                    <img src="http://admin.shop.com/Uploads/<?php echo ($goodsPhoto["path"]); ?>">
+                                    <a href="javascript:;" dbid="<?php echo ($goodsPhoto["id"]); ?>">X</a>
+                                </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <hr/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="file" class="uploadify-button" id="file_upload_2" >
                     </td>
                 </tr>
             </table>
+            <!-- 文章列表-->
+            <table width="90%" id="article-table" style="display:none;" align="center">
+
+                <tbody><tr>
+                    <td colspan="3">
+                        <img src="http://admin.shop.com/Public/images/icon_search.gif" width="26" height="22" border="0" alt="SEARCH">
+                        文章标题 <input type="text" name="article_title" class="article_title">
+                        <input type="button" value=" 搜索 " class="button search">
+                    </td>
+                </tr>
+                <tr>
+                    <th>可选文章</th>
+                    <th>操作</th>
+                    <th>跟该商品关联的文章</th>
+                </tr>
+                <tr>
+                    <td width="45%">
+                        <select name="left" class="left" size="20" style="width:100%" multiple="multiple" >
+                        </select>
+                    </td>
+                    <td align="center">
+                        <p><input type="button" value=">>" class="button all2right"></p>
+                        <p><input type="button" value=">" class="button toright"></p>
+                        <p><input type="button" value="<"  class="button toleft"></p>
+                        <p><input type="button" value="<<"  class="button all2left"></p>
+                    </td>
+                    <td width="45%">
+                        <div class="article_ids">
+                            <?php if(is_array($goods_Articles)): $i = 0; $__LIST__ = $goods_Articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$goods_Article): $mod = ($i % 2 );++$i;?><input type='hidden' name='article_ids[]' value="<?php echo ($goods_Article["article_id"]); ?>"><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </div>
+                        <select name="right" class="right" size="20" style="width:100%" multiple="multiple" >
+                            <?php if(is_array($goods_Articles)): $i = 0; $__LIST__ = $goods_Articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$goods_Article): $mod = ($i % 2 );++$i;?><option value="<?php echo ($goods_Article["article_id"]); ?>"><?php echo ($goods_Article["article_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </select>
+                    </td>
+                </tr>
+                </tbody></table>
+
+            <!--确定按钮-->
             <div align="center">
                     <input type="hidden" name="id" value="<?php echo ($id); ?>">
                     <input type="submit" class="button " value=" 确定 "/>
@@ -215,18 +272,20 @@
             /**********************************Tab展示添加列表 结束*************************************************/
 
             /**********************************上传插件 开始*************************************************/
+            var logoData='';
             $("#file_upload_1").uploadify({
                 height        : 30,
                 swf           : 'http://admin.shop.com/Public/uploadify/uploadify.swf',
                 uploader      : "<?php echo U('Upload/upload');?>",
                 width         : 120,
                 buttonText    : '上传图片',
-                'fileSizeLimit' : '1MB',
+                'fileSizeLimit' : '3MB',
                 'formData'      : {'dir' : 'php1009-0114'},
                 'fileTypeExts' : '*.gif; *.jpg; *.png',
                 'onUploadSuccess' : function(file, data, response) {
+                    logoData=data;
                     $('.upload-img-box').show();
-                    $('.upload-pre-item img').attr('src','http://php1009-0114.b0.upaiyun.com/'+data);
+                    $('.upload-pre-item img').attr('src','http://admin.shop.com/Uploads/'+data);
                     $('.logo').val(data);
                 },
                 'onUploadError' : function(file, errorCode, errorMsg, errorString) {
@@ -276,11 +335,15 @@
             <?php else: ?>
             //如果是编辑,需要回显,根据接收到的一条数据中的parent_id选中对象选项
             var goods_category_id= <?php echo ($goods_category_id); ?>;
+
+            //回显logo
+            $('.upload-img-box').show();
+            //$('.upload-pre-item img').attr('src',"http://admin.shop.com/Uploads/<?php echo ($logo); ?>")
             //找到父节点对应的节点
             var node = treeObj.getNodeByParam("id",goods_category_id);
-                //选中此节点
+            //选中此节点
             treeObj.selectNode(node);
-                //将选中的节点信息更新到隐藏域的id,和显示框的名字中
+            //将选中的节点信息更新到隐藏域的id,和显示框的名字中
             $('.goods_category_id').val(node.id);
             $('.goods_category_name').val(node.name);
             /**********************************多选回显 开始*************************************************/
@@ -294,11 +357,122 @@
             }
             $('.goods_status').val(gd_status);
 
-            /**********************************多选回显 结束*************************************************/
-            $('.upload-img-box').show();
-            $('.upload-pre-item img').attr('src','http://php1009-0114.b0.upaiyun.com/'+data);<?php endif; ?>
+            /**********************************多选回显 结束*************************************************/<?php endif; ?>
 
             /**********************************分类树状展示 结束*************************************************/
+
+
+            /**********************************相册 开始*************************************************/
+            $("#file_upload_2").uploadify({
+                height        : 30,
+                swf           : 'http://admin.shop.com/Public/uploadify/uploadify.swf',
+                uploader      : "<?php echo U('Upload/upload');?>",
+                width         : 120,
+                buttonText    : '上传图片',
+                'fileSizeLimit' : '3MB',
+                'formData'      : {'dir' : 'php1009-0114'},
+                'fileTypeExts' : '*.gif; *.jpg; *.png',
+                'onUploadSuccess' : function(file, data, response) {  //data就是响应的 上传后的地址
+                    //上传成功之后向
+                    var imgHtml = '<div class="upload-pre-item">\
+                                 <img src="http://admin.shop.com/Uploads/' + data + '"/>\
+                               <input type="hidden" name="goods_photo_paths[]" value="' + data + '">\
+                               <a href="javascript:;">X</a>\
+                               </div>';
+
+                    $('#upload-img-box').append(imgHtml);
+
+                },
+                'onUploadError': function (file, errorCode, errorMsg, errorString) {
+                    alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
+                }
+            });
+
+            //删除照片    分两种情况下:  1. 删除时将数据库中也删除.    2. 如果没有在数据库中,只将页面上的照片删除
+            $('#upload-img-box').on('click', 'a', function () {
+                var dbid = $(this).attr('dbid');
+                var that = $(this);  //保存起来在ajax的回调函数中使用..
+
+                if (dbid) {
+                    $.post('<?php echo U("GoodsPhoto/remove");?>', {id: dbid}, function (data) {
+                        if (data.status == 0) {
+                            //删除失败时, 提示错误信息
+                            layer.msg(data.info, {
+                                icon: 2
+                            });
+                        } else {
+                            //删除数据库中数据成功时,删除页面上的div
+                            that.closest('div').remove();
+                        }
+                    });
+                } else {
+                    //直接删除div
+                    that.closest('div').remove();
+                }
+            });
+
+
+            /**********************************相册 结束*************************************************/
+
+            /**********************************文章 开始*************************************************/
+            $('.search').click(function(){
+                $('.left').empty();
+                var parms = $('.article_title').val();
+                $.getJSON('<?php echo U("Article/search");?>',{name:parms},function(data){
+                    $(data).each(function(){
+                        $("<option value='"+this.id+"'>"+this.name+"</option>").appendTo('.left')
+                    })
+                });
+            });
+
+            //移动文章
+            //全部到右
+            $('.all2right').click(function(){
+                $('.left option').appendTo('.right');
+                hiddenSelect();
+            });
+            //全部到左
+            $('.all2left').click(function(){
+                $('.right option').appendTo('.left');
+                hiddenSelect();
+            });
+            //选中到右
+            $('.toright').click(function(){
+                $('.left>option:selected').appendTo('.right');
+                hiddenSelect();
+            });
+            //选中到左
+            $('.toleft').click(function(){
+                $('.right>option:selected').appendTo('.left');
+                hiddenSelect();
+            });
+
+            //双击
+            $('.left').on('dblclick','option',function(){
+                $(this).appendTo('.right');
+                hiddenSelect();
+            });
+            $('.right').on('dblclick','option',function(){
+                $(this).appendTo('.left');
+                hiddenSelect();
+            });
+
+            //每当清空隐藏域并赋予新的值
+            function hiddenSelect(){
+                //将隐藏域清空
+                $('.article_ids').empty();
+                //将右边所有option的值放到隐藏域
+                $('.right>option').each(function(){
+                    $("<input type='hidden' name='article_ids[]' value='"+this.value+"'>").appendTo('.article_ids')
+                })
+            }
+
+
+
+
+
+
+            /**********************************文章 结束*************************************************/
 
 
 

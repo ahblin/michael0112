@@ -67,7 +67,7 @@
                         <td align='center'><?php echo ($row["supplier_id"]); ?></td>
                         <td align='center'><?php echo ($row["shop_price"]); ?></td>
                         <td align='center'><?php echo ($row["market_price"]); ?></td>
-                        <td align='center'><img src="http://php1009-0114.b0.upaiyun.com/<?php echo ($row["logo"]); ?>-mini" width="30"></td>
+                        <td align='center'><img src="http://admin.shop.com/Uploads/<?php echo ($row["logo"]); ?>" width="30"></td>
                         <td align='center'><?php echo ($row["stock"]); ?></td>
                         <td align='center'><?php echo ($row["goods_status"]); ?></td>
                         <td align="center">

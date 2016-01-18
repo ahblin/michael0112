@@ -134,7 +134,7 @@ body {
       <li class="menu-item"><a href="<?php echo U('Goods/index');?>" target="main-frame">商品列表</a></li>
       <li class="menu-item"><a href="<?php echo U('Goods/add');?>" target="main-frame">添加新商品</a></li>
       <li class="menu-item"><a href="<?php echo U('MemberLevel/index');?>" target="main-frame">会员级别列表</a></li>
-      <li class="menu-item"><a href="comment_manage.php?act=list" target="main-frame">用户评论</a></li>
+      <!--<li class="menu-item"><a href="comment_manage.php?act=list" target="main-frame">用户评论</a></li>
           <li class="menu-item"><a href="goods_type.php?act=manage" target="main-frame">商品类型</a></li>
           <li class="menu-item"><a href="goods.php?act=trash" target="main-frame">商品回收站</a></li>
           <li class="menu-item"><a href="picture_batch.php" target="main-frame">图片批量处理</a></li>
@@ -146,10 +146,10 @@ body {
           <li class="menu-item"><a href="goods.php?act=list&extension_code=virtual_card" target="main-frame">虚拟商品列表</a></li>
           <li class="menu-item"><a href="goods.php?act=add&extension_code=virtual_card" target="main-frame">添加虚拟商品</a></li>
           <li class="menu-item"><a href="virtual_card.php?act=change" target="main-frame">更改加密串</a></li>
-          <li class="menu-item"><a href="goods_auto.php?act=list" target="main-frame">商品自动上下架</a></li>
+          <li class="menu-item"><a href="goods_auto.php?act=list" target="main-frame">商品自动上下架</a></li>-->
         </ul>
       </li>
-  <li class="explode" key="03_promotion" name="menu">
+<!--  <li class="explode" key="03_promotion" name="menu">
     促销管理        <ul>
           <li class="menu-item"><a href="snatch.php?act=list" target="main-frame">夺宝奇兵</a></li>
           <li class="menu-item"><a href="bonus.php?act=list" target="main-frame">红包类型</a></li>
@@ -195,11 +195,11 @@ body {
           <li class="menu-item"><a href="visit_sold.php?act=list" target="main-frame">访问购买率</a></li>
           <li class="menu-item"><a href="adsense.php?act=list" target="main-frame">站外投放JS</a></li>
         </ul>
-      </li>
+      </li>-->
   <li class="explode" key="07_content" name="menu">
     文章管理        <ul>
-          <li class="menu-item"><a href="articlecat.php?act=list" target="main-frame">文章分类</a></li>
-          <li class="menu-item"><a href="article.php?act=list" target="main-frame">文章列表</a></li>
+          <li class="menu-item"><a href="<?php echo U('ArticleCategory/index');?>" target="main-frame">文章分类</a></li>
+          <li class="menu-item"><a href="<?php echo U('Article/index');?>" target="main-frame">文章列表</a></li>
           <li class="menu-item"><a href="article_auto.php?act=list" target="main-frame">文章自动发布</a></li>
           <li class="menu-item"><a href="vote.php?act=list" target="main-frame">在线调查</a></li>
         </ul>

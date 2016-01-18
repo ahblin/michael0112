@@ -12,7 +12,7 @@ class GoodsController extends BaseController
     /**
      * 钩子方法,用于覆盖父类钩子方法
      */
-    protected function _befor_display(){
+    protected function _before_edit_display(){
         /**
          * 以下是get方式访问之前需要准备数据
          */
@@ -58,7 +58,24 @@ class GoodsController extends BaseController
             $model = D('GoodsMemberPrice');
             $rows = $model->getPrice($id);//得到关联数组
             $this->assign('goods_member_price',$rows);
+
+
+            //准备相册信息
+            $model = D('GoodsPhoto');
+            $rows = $model->getPhoto($id);//得到关联数组
+            $this->assign('goods_photos',$rows);
+
+            //准备文章信息
+            $model = D('GoodsArticle');
+            $rows = $model->getArticle($id);//得到关联数组
+            $this->assign('goods_Articles',$rows);
+
         }
     }
 
+    /**
+     * @param $name
+     */
+    public function _before_index_display(){
+    }
 }
