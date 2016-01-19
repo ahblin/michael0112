@@ -100,19 +100,10 @@
 
 
             function onClick(e, treeId, treeNode) {
-                console.debug(treeNode);
-                var zTree = $.fn.zTree.getZTreeObj("treeDemo"),
-                        nodes = zTree.getSelectedNodes(),
-                        v = "";
-                nodes.sort(function compare(a,b){return a.id-b.id;});
-                for (var i=0, l=nodes.length; i<l; i++) {
-                    v += nodes[i].name + ",";
-                }
-                if (v.length > 0 ) v = v.substring(0, v.length-1);
                 var cityObj = $("#citySel");
+                cityObj.prop("value", treeNode.name);
                 var goos_category_id_Obj = $("#goods_category_id");
-                cityObj.attr("value", v);
-                goos_category_id_Obj.attr("value", treeNode.id);
+                goos_category_id_Obj.prop("value", treeNode.id);
             }
 
             function showMenu() {
