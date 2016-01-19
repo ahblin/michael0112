@@ -68,4 +68,14 @@ class GoodsCategoryModel extends BaseModel
         }
         return parent::save($data);
     }
+
+    /**
+     * 根据分类ID找到子分类的id
+     * @param $cid
+     */
+    public function getCategoryIds($cid){
+        $sql = "select c.id from goods_category as p join goods_category as c on c.lft<=p.lft and c.rgt>=p.rgt where p.id ={$cid} ORDER BY c.lft";
+        $rows = $this->query($sql);
+        return array_column($rows,'id');
+    }
 }

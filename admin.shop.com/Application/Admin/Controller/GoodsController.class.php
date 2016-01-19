@@ -74,13 +74,14 @@ class GoodsController extends BaseController
     }
 
     /**
+     * index显示之前,准备其他表格数据
      * @param $name
      */
     public function _before_index_display(){
         //准备分类列表
         $model = D('GoodsCategory');
-        $category_list = $model->getListNoPage('id,name');
-        $this->assign('category_list',$category_list);
+        $jsonlist = $model->getJson('id,name,parent_id');
+        $this->assign('zNodes',$jsonlist);
 
 
         //准备品牌列表
@@ -93,5 +94,26 @@ class GoodsController extends BaseController
         $model = D('Supplier');
         $supplier_list = $model->getListNoPage('id,name');
         $this->assign('supplier_lists',$supplier_list);
+    }
+
+
+    /**
+     * 为wheres提供数据
+     */
+    public function _setWheres(&$wheres){
+        $getData = I('get.');
+        if (!empty($getData['brand_id'])) {
+            $wheres['obj.brand_id'] = array('eq',$getData['brand_id']);
+        }
+        if (!empty($getData['supplier_id'])) {
+            $wheres['obj.supplier_id'] = array('eq',$getData['supplier_id']);
+        }
+        //如果分类搜索不为空,需要将子分类全部查出来
+        if (!empty($getData['goods_category_id'])) {
+            $cid = $getData['goods_category_id'];
+            $model = D('GoodsCategory');
+            $ids = $model->getCategoryIds($cid);
+            $wheres['obj.goods_category_id'] = array('in',$ids);
+        }
     }
 }

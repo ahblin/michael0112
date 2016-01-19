@@ -66,7 +66,7 @@
 
     <script type="text/javascript" src="http://admin.shop.com/Public/treegrid/js/jquery.treegrid.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $('.tree').treegrid();
         })
     </script>

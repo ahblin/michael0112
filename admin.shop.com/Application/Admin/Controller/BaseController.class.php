@@ -39,8 +39,11 @@ class BaseController extends Controller
 
         //设定查询的条件
         if (!empty($search)) {
-            $wheres['name'] = array('like', "%$search%");
+            $wheres['obj.name'] = array('like', "%$search%");
         }
+        //完善wheres信息
+        $this->_setWheres($wheres);
+
         $pageResult = $this->model->getListWithPage($wheres);
         //将查询语句发配到网页,方便回显
         $pageResult['search'] = $search;
@@ -56,6 +59,12 @@ class BaseController extends Controller
     }
 
 
+    /**
+     * 为wheres提供信息
+     */
+    public function _setWheres(&$wheres){
+
+    }
     /**
      * 用于子类覆盖,为了再index显示之前提供数据
      */
