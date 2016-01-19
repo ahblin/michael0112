@@ -1,0 +1,854 @@
+[ 2016-01-20T00:00:00+08:00 ] 127.0.0.1 /index.php/Index/GOODS
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 5 行.
+NOTIC: [8] Undefined variable: goodsCategorys F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 141 行.
+NOTIC: [8] Undefined variable: parents F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 183 行.
+NOTIC: [8] Undefined variable: name F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 184 行.
+NOTIC: [8] Undefined variable: historys F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 285 行.
+NOTIC: [8] Undefined variable: name F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 302 行.
+NOTIC: [8] Undefined variable: paths F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 307 行.
+NOTIC: [8] Undefined variable: paths F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 308 行.
+NOTIC: [8] Undefined variable: paths F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 319 行.
+NOTIC: [8] Undefined variable: sn F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 332 行.
+NOTIC: [8] Undefined variable: market_price F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 333 行.
+NOTIC: [8] Undefined variable: shop_price F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 334 行.
+NOTIC: [8] Undefined variable: name F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 408 行.
+NOTIC: [8] Undefined variable: sn F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 409 行.
+NOTIC: [8] Undefined variable: brand_name F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 410 行.
+NOTIC: [8] Undefined variable: intro F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 423 行.
+NOTIC: [8] Undefined variable: helpArticleCategorys F:\shop\www.shop.com\Runtime\Cache\Home\22b3d402bd027a259f91bae7e3e68c93.php 第 660 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:00:00+08:00 ] 127.0.0.1 /index.php/Index/__UEDITOR__/ueditor.config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:__UEDITOR__
+
+[ 2016-01-20T00:00:00+08:00 ] 127.0.0.1 /index.php/Index/__UEDITOR__/ueditor.all.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:__UEDITOR__
+
+[ 2016-01-20T00:00:00+08:00 ] 127.0.0.1 /index.php/Index/__GOODS__!big
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:__GOODS__!big
+
+[ 2016-01-20T00:01:26+08:00 ] 127.0.0.1 /index.php/Index/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title F:\shop\www.shop.com\Runtime\Cache\Home\93094bc2220515a6d1fda9dd1513c959.php 第 5 行.
+NOTIC: [8] Undefined variable: goodsCategorys F:\shop\www.shop.com\Runtime\Cache\Home\93094bc2220515a6d1fda9dd1513c959.php 第 140 行.
+NOTIC: [8] Undefined variable: helpArticleCategorys F:\shop\www.shop.com\Runtime\Cache\Home\93094bc2220515a6d1fda9dd1513c959.php 第 531 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:01:27+08:00 ] 127.0.0.1 /index.php/Index/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: meta_title F:\shop\www.shop.com\Runtime\Cache\Home\93094bc2220515a6d1fda9dd1513c959.php 第 5 行.
+NOTIC: [8] Undefined variable: goodsCategorys F:\shop\www.shop.com\Runtime\Cache\Home\93094bc2220515a6d1fda9dd1513c959.php 第 140 行.
+NOTIC: [8] Undefined variable: helpArticleCategorys F:\shop\www.shop.com\Runtime\Cache\Home\93094bc2220515a6d1fda9dd1513c959.php 第 531 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:01:28+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods_category` ORDER BY `lft`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 5 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 131 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 132 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 137 行.
+NOTIC: [8] Undefined variable: is_8s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 322 行.
+NOTIC: [8] Undefined variable: is_4s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 336 行.
+NOTIC: [8] Undefined variable: is_1s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 350 行.
+NOTIC: [8] Undefined variable: is_2s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 364 行.
+NOTIC: [8] Undefined variable: is_16s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 378 行.
+NOTIC: [8] Undefined variable: helpArticleCategorys F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 653 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:01:29+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods_category` ORDER BY `lft`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: meta_title F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 5 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 131 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 132 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 137 行.
+NOTIC: [8] Undefined variable: is_8s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 322 行.
+NOTIC: [8] Undefined variable: is_4s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 336 行.
+NOTIC: [8] Undefined variable: is_1s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 350 行.
+NOTIC: [8] Undefined variable: is_2s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 364 行.
+NOTIC: [8] Undefined variable: is_16s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 378 行.
+NOTIC: [8] Undefined variable: helpArticleCategorys F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 653 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-20T00:01:29+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods_category` ORDER BY `lft`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: meta_title F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 5 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 131 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 132 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 137 行.
+NOTIC: [8] Undefined variable: is_8s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 322 行.
+NOTIC: [8] Undefined variable: is_4s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 336 行.
+NOTIC: [8] Undefined variable: is_1s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 350 行.
+NOTIC: [8] Undefined variable: is_2s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 364 行.
+NOTIC: [8] Undefined variable: is_16s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 378 行.
+NOTIC: [8] Undefined variable: helpArticleCategorys F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 653 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:02:03+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0080s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2016-01-20T00:03:09+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 131 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 132 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 137 行.
+NOTIC: [8] Undefined variable: goodsCategorys F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 139 行.
+NOTIC: [8] Undefined variable: is_8s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 322 行.
+NOTIC: [8] Undefined variable: is_4s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 336 行.
+NOTIC: [8] Undefined variable: is_1s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 350 行.
+NOTIC: [8] Undefined variable: is_2s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 364 行.
+NOTIC: [8] Undefined variable: is_16s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 378 行.
+NOTIC: [8] Undefined variable: helpArticleCategorys F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 653 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-20T00:03:10+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 131 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 132 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 137 行.
+NOTIC: [8] Undefined variable: goodsCategorys F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 139 行.
+NOTIC: [8] Undefined variable: is_8s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 322 行.
+NOTIC: [8] Undefined variable: is_4s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 336 行.
+NOTIC: [8] Undefined variable: is_1s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 350 行.
+NOTIC: [8] Undefined variable: is_2s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 364 行.
+NOTIC: [8] Undefined variable: is_16s F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 378 行.
+NOTIC: [8] Undefined variable: helpArticleCategorys F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 653 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:03:13+08:00 ] 127.0.0.1 /index.php/Index/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: goodsCategorys F:\shop\www.shop.com\Runtime\Cache\Home\93094bc2220515a6d1fda9dd1513c959.php 第 140 行.
+NOTIC: [8] Undefined variable: helpArticleCategorys F:\shop\www.shop.com\Runtime\Cache\Home\93094bc2220515a6d1fda9dd1513c959.php 第 531 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:03:14+08:00 ] 127.0.0.1 /index.php/Index/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: goodsCategorys F:\shop\www.shop.com\Runtime\Cache\Home\93094bc2220515a6d1fda9dd1513c959.php 第 140 行.
+NOTIC: [8] Undefined variable: helpArticleCategorys F:\shop\www.shop.com\Runtime\Cache\Home\93094bc2220515a6d1fda9dd1513c959.php 第 531 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:03:16+08:00 ] 127.0.0.1 /index.php/Index/GOODS
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 参数错误或者未定义:id
+
+[ 2016-01-20T00:03:47+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:03:48+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:07:25+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name`,`parent_id`,`level` FROM `goods_category` WHERE `status` = 1 ORDER BY `lft`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0390s ]
+SQL: SELECT `id`,`name` FROM `article_category` WHERE `is_help` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0090s ]
+SQL: select  obj.id,obj.name,obj.article_category_id from article as obj  join article_category as ac on obj.article_category_id = ac.id and ac.is_help = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&1=1 ) LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&2=2 ) LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&4=4 ) LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&8=8 ) LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&16=16 ) LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 130 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 131 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-20T00:07:25+08:00 ] 127.0.0.1 /index.php/Index/__GOODS__/2016-01-18/569bbb3a0df28.jpg!m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0080s ]
+ERR: 非法操作:__GOODS__
+
+[ 2016-01-20T00:07:25+08:00 ] 127.0.0.1 /index.php/Index/__GOODS__/2016-01-18/569d0a83d9ab6.png!m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+ERR: 非法操作:__GOODS__
+
+[ 2016-01-20T00:07:25+08:00 ] 127.0.0.1 /index.php/Index/__GOODS__/2016-01-18/569c7ee4bb41b.jpg!m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+ERR: 非法操作:__GOODS__
+
+[ 2016-01-20T00:07:28+08:00 ] 127.0.0.1 /index.php/Index/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:07:35+08:00 ] 127.0.0.1 /index.php/Index/GOODS
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+ERR: 参数错误或者未定义:id
+
+[ 2016-01-20T00:07:40+08:00 ] 127.0.0.1 /index.php/Index/goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+ERR: 参数错误或者未定义:id
+
+[ 2016-01-20T00:07:52+08:00 ] 127.0.0.1 /index.php/Index/goods/id/44.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0090s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '44' LIMIT 1   [ RunTime:0.0020s ]
+SQL: select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id = 6  order by parent.lft [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_photo` [ RunTime:0.0470s ]
+SQL: SELECT `path` FROM `goods_photo` WHERE `goods_id` = '44'  [ RunTime:0.0010s ]
+
+[ 2016-01-20T00:08:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&1=1 ) LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&2=2 ) LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&4=4 ) LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&8=8 ) LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&16=16 ) LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 130 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 131 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:08:54+08:00 ] 127.0.0.1 /index.php/Index/goods/id/44.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '44' LIMIT 1   [ RunTime:0.0010s ]
+SQL: select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id = 6  order by parent.lft [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_photo` [ RunTime:0.0050s ]
+SQL: SELECT `path` FROM `goods_photo` WHERE `goods_id` = '44'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:08:54+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__GOODS__2016-01-18/569d0a83d9ab6.png!big
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__GOODS__2016-01-18' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:08:54+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__UEDITOR__/ueditor.config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__UEDITOR__' LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:08:54+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__GOODS__/2016-01-18/569d0a83d9ab6.png!small
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__GOODS__' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:08:54+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__GOODS__/2016-01-19/569d986615ed5.png!small
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__GOODS__' LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:08:54+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__UEDITOR__/ueditor.all.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__UEDITOR__' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:13:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&1=1 ) LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&2=2 ) LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&4=4 ) LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&8=8 ) LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`shop_price`,`logo` FROM `goods` WHERE `status` = 1 AND ( goods_status&16=16 ) LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 130 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 131 行.
+NOTIC: [8] Undefined variable: is_hide F:\shop\www.shop.com\Runtime\Cache\Home\9ef23dea6dc3d5b061940010f133aaab.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:13:59+08:00 ] 127.0.0.1 /index.php/Index/goods/id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '41' LIMIT 1   [ RunTime:0.0000s ]
+SQL: select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id = 13  order by parent.lft [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_photo` [ RunTime:0.0060s ]
+SQL: SELECT `path` FROM `goods_photo` WHERE `goods_id` = '41'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-20T00:13:59+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__GOODS__/2016-01-18/569bbb3a0df28.jpg!small
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__GOODS__' LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:13:59+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__GOODS__2016-01-18/569bbb3a0df28.jpg!big
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0100s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__GOODS__2016-01-18' LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:13:59+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__UEDITOR__/ueditor.config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__UEDITOR__' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:13:59+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__GOODS__/2016-01-18/569c75858b981.jpg!small
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__GOODS__' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:13:59+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__UEDITOR__/ueditor.all.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__UEDITOR__' LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:16:09+08:00 ] 127.0.0.1 /index.php/Index/goods/id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '41' LIMIT 1   [ RunTime:0.0000s ]
+SQL: select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id = 13  order by parent.lft [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_photo` [ RunTime:0.0060s ]
+SQL: SELECT `path` FROM `goods_photo` WHERE `goods_id` = '41'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-20T00:16:09+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__GOODS__/2016-01-18/569bbb3a0df28.jpg!small
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0110s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__GOODS__' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:16:09+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__GOODS__2016-01-18/569bbb3a0df28.jpg!big
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__GOODS__2016-01-18' LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
+[ 2016-01-20T00:16:09+08:00 ] 127.0.0.1 /index.php/Index/goods/id/__GOODS__/2016-01-18/569c75858b981.jpg!small
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT obj.*,b.name as brand_name,gi.intro as intro FROM goods obj INNER JOIN brand as b on obj.brand_id = b.id INNER JOIN goods_intro as gi on obj.id = gi.goods_id  WHERE obj.id = '__GOODS__' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by parent.lft' at line 1
+ [ SQL语句 ] : select  parent.name,parent.id from goods_category as parent,goods_category as child where parent.lft<=child.lft and parent.rgt>=child.rgt  and child.id =   order by parent.lft
+
